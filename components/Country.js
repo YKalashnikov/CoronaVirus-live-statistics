@@ -2,6 +2,7 @@ import {useState} from 'react'
 import useStats from '../utils/useStats';
 import Stats from '../components/Stats';
 import { Roller } from "react-awesome-spinners";
+import flags from "emoji-flags";
 import Select from 'react-select'
 import {
     Card,
@@ -22,7 +23,7 @@ const colourStyles = {
   }
 }
 function Country({url}){
-    const [selectedCountry, setSelectedCountry] = useState('USA')
+    const [selectedCountry, setSelectedCountry] = useState('US')
    const  {stats: countries, loading, error} = useStats(url)
 
    if(!countries) return ''
@@ -38,21 +39,27 @@ function Country({url}){
     oldStructure.iso3[country.iso2] = country.iso3;
     }
     return(
+      //
         <div>
-              <CardTitle h2 style={{textAlign:'center'}}><span style={{borderBottom:'1px dashed #000'}}>{selectedCountry.toUpperCase()}</span>: CORONA VIRUS STATISTICS </CardTitle>
+              <CardTitle h2 style={{margin: '0 1rem',textAlign:'center',display:'flex',alignContext:'center',alignItems:'center'}}>
+              <span style={{fontSize:'2.5rem', display:'flex',alignItems:'center',alignContext:'center', margin: '0 1.5rem'}}>
+
+              {flags.countryCode(selectedCountry).emoji}
+              </span> CORONA VIRUS STATISTICS </CardTitle>
 
               <CardTitle style={{display:'flex', justifyContent:'center', flexDirection:'column', maxWidth:'16rem', width:'100%', display: 'flex', margin:'0 auto 2rem'}}>
-
+  
+          
          <Select 
              styles={colourStyles}
          defaultValue={{ label:selectedCountry, value:selectedCountry}} onChange={(e)=>{setSelectedCountry(e.value)}} 
          
          options = {Object.entries(oldStructure.countries).map(([country, code]) => (
-           
            {
             label:country,
-            value:country
+            value:code
       }  
+      
           ))}
         />
         </CardTitle>
