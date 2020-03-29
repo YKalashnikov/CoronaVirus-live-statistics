@@ -9,6 +9,15 @@ export default () => (
 
 <meta name="corona virus statistics" content="Corona Virus Live Statistics In The World" />
 
+<link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/2019-nCoV-CDC-23312_without_background.png/1280px-2019-nCoV-CDC-23312_without_background.png"
+    />
+
+<meta name="description" content="Corona virus statistics" />
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 <title>Corona Virus</title>
