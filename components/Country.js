@@ -41,8 +41,8 @@ function Country({url}){
     return(
       //
         <div>
-              <CardTitle h2 style={{margin: '0 1rem',textAlign:'center',display:'flex',alignContext:'center',alignItems:'center'}}>
-              <span style={{fontSize:'2.5rem', display:'flex',alignItems:'center',alignContext:'center', margin: '0 1.5rem'}}>
+              <CardTitle h2 style={{margin: '0 3rem',textAlign:'center',display:'flex',alignContext:'center',alignItems:'center', justifyContent:'space-around'}}>
+              <span style={{fontSize:'3rem', display:'flex',alignItems:'center',alignContext:'center'}}>
 
               {flags.countryCode(selectedCountry).emoji}
               </span> CORONA VIRUS STATISTICS </CardTitle>
