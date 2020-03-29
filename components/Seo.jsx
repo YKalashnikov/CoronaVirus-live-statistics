@@ -2,16 +2,16 @@ import Head from "next/head";
 
 export default () => (
     <Head>
-<link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+<link rel="icon" type="image/x-icon" href="https://www.vicksburgnews.com/wp-content/uploads/2020/02/Coronavirus-2019-nCoV-CDC-23312_without_background.png"/>
 
-<meta property="image" content="/favicon.ico"/>
+<meta property="image" content="https://www.vicksburgnews.com/wp-content/uploads/2020/02/Coronavirus-2019-nCoV-CDC-23312_without_background.png"/>
 <meta name="corona virus statistics" content="Corona Virus Live Statistics In The World" />
 
 <link
       rel="icon"
       type="image/png"
       sizes="192x192"
-      href="/favicon.ico"
+      href="https://www.vicksburgnews.com/wp-content/uploads/2020/02/Coronavirus-2019-nCoV-CDC-23312_without_background.png"
     />
 
 <meta name="description" content="Corona virus statistics" />
