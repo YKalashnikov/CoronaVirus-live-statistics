@@ -1,22 +1,14 @@
 import Stats from '../components/Stats';
 import Country from '../components/Country';
 import Head from 'next/head'
-
+import Seo from "../components/Seo";
 export default function IndexPage() {
     return (
     <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}> 
         <Head>
-  <link rel="icon" type="image/x-icon" href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.vicksburgnews.com%2Fwp-content%2Fuploads%2F2020%2F02%2FCoronavirus-2019-nCoV-CDC-23312_without_background.png&f=1&nofb=1"/>
   <title>Corona Virus</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <meta property="image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/2019-nCoV-CDC-23312_without_background.png/1280px-2019-nCoV-CDC-23312_without_background.png"/>
-  
-  <meta name="corona virus statistics" content="Corona Virus Live Statistics In The World" />
-
-
 </Head>
-<noscript dangerouslySetInnerHTML={{__html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NTCHHHP" height="0" width="0" style="display:none;visibility:hidden;"></iframe>`}} />
+<Seo />
       <h2 style={{textAlign:'center'}}>WORLD CORONA VIRUS <a style={{cursor:'pointer', color:'blue', textDecorationLine:'underline', textDecorationColor:'lightblue'}}href="https://covid19.mathdro.id/api/og" target='_blank'>STATISTICS</a></h2>
 
         <Stats url ="https://covid19.mathdro.id/api"></Stats>
