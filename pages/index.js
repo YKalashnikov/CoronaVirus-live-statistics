@@ -1,6 +1,7 @@
 import Stats from '../components/Stats';
 import Country from '../components/Country';
 import Head from 'next/head'
+
 export default function IndexPage() {
     return (
     <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}> 
@@ -12,17 +13,6 @@ export default function IndexPage() {
   <meta property="image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/2019-nCoV-CDC-23312_without_background.png/1280px-2019-nCoV-CDC-23312_without_background.png"/>
   
   <meta name="corona virus statistics" content="Corona Virus Live Statistics In The World" />
-  
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162033101-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-162033101-1');
-</script>
-
 
 
 </Head>
